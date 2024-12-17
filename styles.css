@@ -1,0 +1,143 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f8faff;
+    color: #333;
+    overflow-x: hidden;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    color: #000c4b;
+    font-size: 1.8rem;
+}
+
+.highlight {
+    color: #00bcd4;
+}
+
+/* Chatbot Section */
+.chatbot-container {
+    text-align: center;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+.intro-text {
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.chatbot-box {
+    background-color: #e3efff;
+    padding: 10px;
+    border-radius: 10px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.chatbot-box i {
+    font-size: 1.5rem;
+    color: #00bcd4;
+}
+
+/* Services Section */
+.services {
+    margin: 20px 10px;
+}
+
+.services h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.service-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.service-card {
+    background: #f8faff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 45%;
+    transition: all 0.3s ease;
+}
+
+.service-card:hover {
+    background-color: #d6e9ff; /* Blue hover effect */
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.service-card img {
+    width: 50px;
+    margin-bottom: 10px;
+}
+
+/* Navigation */
+nav {
+    position: fixed;
+    bottom: 0;
+    background: #000c4b;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 10px 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+
+nav a i {
+    font-size: 1.5rem;
+}
+
+nav a span {
+    font-size: 0.8rem;
+    display: block;
+    margin-top: 5px;
+}
+
+nav a:hover {
+    color: #00bcd4;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .service-card {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .service-card {
+        width: 100%;
+    }
+}

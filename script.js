@@ -1,19 +1,13 @@
 document.addEventListener("DOMContentLoaded", () => {
+    const currentPage = window.location.pathname.split("/").pop();
     const navLinks = document.querySelectorAll("nav a");
-    const sendButton = document.querySelector("#send-btn");
 
-    // Navigation Section Switching
+    // Highlight the active link
     navLinks.forEach(link => {
-        link.addEventListener("click", e => {
-            e.preventDefault();
-            alert(`Navigating to ${link.textContent}...`);
-        });
+        if (link.getAttribute("href") === currentPage) {
+            link.classList.add("active");
+        } else {
+            link.classList.remove("active");
+        }
     });
-
-    // Chat Button Action (Example Functionality)
-    if (sendButton) {
-        sendButton.addEventListener("click", () => {
-            alert("Chat message sent!");
-        });
-    }
 });

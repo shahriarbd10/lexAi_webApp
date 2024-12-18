@@ -1,3 +1,3 @@
 live:
 
-https://shahriarbd10.github.io/lexAi_webApp/
+https://bdlexai.vercel.app/
